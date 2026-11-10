@@ -10,7 +10,7 @@ def get_player_pos() -> tuple:
             if (len(coord_split) != 3):
                 raise SyntaxError
 
-            coord_tuple = ()
+            coord_tuple: tuple[float, ...] = ()
             for element in coord_split:
                 coord_tuple += (float(element),)
 
